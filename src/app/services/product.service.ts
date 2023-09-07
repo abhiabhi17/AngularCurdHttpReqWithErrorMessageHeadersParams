@@ -6,6 +6,8 @@ import { Subject, map,catchError, throwError } from "rxjs";
 @Injectable({providedIn:"root"})
 export class ProductService
 {
+
+  //Created firfox database for trail .
   error=new Subject<string>() // Error to display to component with subject 
 
   constructor(private http:HttpClient){}
